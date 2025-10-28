@@ -82,29 +82,11 @@ export const ClueReveal = ({
         >
           <div className="polaroid-frame max-w-sm">
             <div className="aspect-[4/3] bg-mystery-medium rounded overflow-hidden relative">
-              {/* Placeholder for image - will show actual image when provided */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-4">
-                  <div className="text-4xl mb-2">📷</div>
-                  <p className="text-amber-dark text-xs">
-                    Imagen de pista
-                    <br />
-                    <span className="text-xs opacity-70">
-                      ({puzzle.clueImage})
-                    </span>
-                  </p>
-                </div>
-              </div>
-
-              {/* Try to load actual image */}
+              {/* Load actual image */}
               <img
                 src={puzzle.clueImage}
                 alt={`Pista ${puzzle.id}`}
                 className="w-full h-full object-cover"
-                onError={(e) => {
-                  // Hide image if not found, show placeholder instead
-                  e.currentTarget.style.display = 'none';
-                }}
               />
             </div>
             {/* Polaroid caption */}
