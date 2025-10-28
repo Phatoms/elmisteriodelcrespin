@@ -9,7 +9,7 @@ interface CongratsScreenProps {
 
 export const CongratsScreen = ({
   team,
-  finalWord,
+  finalWord: _finalWord,
   onReset,
 }: CongratsScreenProps) => {
   // Confetti-like animation particles

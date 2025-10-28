@@ -21,6 +21,7 @@ export interface Team {
 export interface IntroData {
   title: string;
   story: string;
+  rules?: string;
   image: string;
 }
 

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import type { Team } from '../types/game.types';
+import { loadProgress } from '../utils/storage';
 
 interface TeamSelectionProps {
   teams: Team[];
@@ -7,6 +8,11 @@ interface TeamSelectionProps {
 }
 
 export const TeamSelection = ({ teams, onSelectTeam }: TeamSelectionProps) => {
+  // Get saved progress for each team
+  const getTeamProgress = (teamId: string) => {
+    const progress = loadProgress(teamId);
+    return progress?.currentPuzzleIndex || 0;
+  };
   return (
     <div className="min-h-screen flex flex-col items-center justify-center p-4 fingerprint-bg">
       {/* Title */}
@@ -32,60 +38,76 @@ export const TeamSelection = ({ teams, onSelectTeam }: TeamSelectionProps) => {
         transition={{ delay: 0.3, duration: 0.6 }}
         className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-6xl w-full"
       >
-        {teams.map((team, index) => (
-          <motion.button
-            key={team.id}
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.1 * index, duration: 0.4 }}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={() => onSelectTeam(team)}
-            className="team-card no-select relative overflow-hidden"
-            style={{
-              borderColor: team.color,
-              boxShadow: `0 4px 20px ${team.color}40`,
-            }}
-          >
-            {/* Team Number Badge */}
-            <div
-              className="absolute top-2 right-2 w-8 h-8 rounded-full flex items-center justify-center font-bold text-mystery-darker text-sm"
-              style={{ backgroundColor: team.color }}
+        {teams.map((team, index) => {
+          const currentPuzzle = getTeamProgress(team.id);
+          const hasProgress = currentPuzzle > 0;
+
+          return (
+            <motion.button
+              key={team.id}
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.1 * index, duration: 0.4 }}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => onSelectTeam(team)}
+              className="team-card no-select relative overflow-hidden"
+              style={{
+                borderColor: team.color,
+                boxShadow: `0 4px 20px ${team.color}40`,
+              }}
             >
-              {team.number}
-            </div>
-
-            {/* Team Color Circle */}
-            <div className="flex flex-col items-center space-y-4">
+              {/* Team Number Badge */}
               <div
-                className="w-20 h-20 md:w-24 md:h-24 rounded-full shadow-lg"
-                style={{
-                  backgroundColor: team.color,
-                  boxShadow: `0 0 20px ${team.color}80`,
-                }}
-              />
-
-              {/* Team Name */}
-              <div className="text-center">
-                <h3
-                  className="font-elegant text-xl md:text-2xl font-bold mb-1"
-                  style={{ color: team.color }}
-                >
-                  {team.name}
-                </h3>
-                <p className="text-amber-dark text-sm font-mystery">
-                  Equipo {team.number}
-                </p>
+                className="absolute top-2 right-2 w-8 h-8 rounded-full flex items-center justify-center font-bold text-mystery-darker text-sm"
+                style={{ backgroundColor: team.color }}
+              >
+                {team.number}
               </div>
-            </div>
 
-            {/* Hover Effect Overlay */}
-            <motion.div
-              className="absolute inset-0 opacity-0 hover:opacity-10 transition-opacity duration-300"
-              style={{ backgroundColor: team.color }}
-            />
-          </motion.button>
-        ))}
+              {/* Progress Badge (if exists) */}
+              {hasProgress && (
+                <div
+                  className="absolute top-2 left-2 px-2 py-1 rounded-full flex items-center gap-1 font-bold text-mystery-darker text-xs"
+                  style={{ backgroundColor: team.color }}
+                >
+                  <span>📍</span>
+                  <span>{currentPuzzle}/5</span>
+                </div>
+              )}
+
+              {/* Team Color Circle */}
+              <div className="flex flex-col items-center space-y-4">
+                <div
+                  className="w-20 h-20 md:w-24 md:h-24 rounded-full shadow-lg"
+                  style={{
+                    backgroundColor: team.color,
+                    boxShadow: `0 0 20px ${team.color}80`,
+                  }}
+                />
+
+                {/* Team Name */}
+                <div className="text-center">
+                  <h3
+                    className="font-elegant text-xl md:text-2xl font-bold mb-1"
+                    style={{ color: team.color }}
+                  >
+                    {team.name}
+                  </h3>
+                  <p className="text-amber-dark text-sm font-mystery">
+                    {hasProgress ? `Enigma ${currentPuzzle}` : `Equipo ${team.number}`}
+                  </p>
+                </div>
+              </div>
+
+              {/* Hover Effect Overlay */}
+              <motion.div
+                className="absolute inset-0 opacity-0 hover:opacity-10 transition-opacity duration-300"
+                style={{ backgroundColor: team.color }}
+              />
+            </motion.button>
+          );
+        })}
       </motion.div>
 
       {/* Instructions */}

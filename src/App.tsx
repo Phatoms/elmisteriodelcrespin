@@ -20,6 +20,7 @@ function App() {
     validateCode,
     onCorrectCode,
     continueToNext,
+    goBackToClue,
     resetGame,
     goToTeamSelection,
     getCurrentPuzzle,
@@ -122,6 +123,8 @@ function App() {
             currentPuzzleIndex={currentPuzzleIndex}
             onCodeSubmit={handleCodeSubmit}
             onValidateCode={validateCode}
+            onBackToClue={goBackToClue}
+            onBackToInicio={resetGame}
           />
         );
 
@@ -143,6 +146,7 @@ function App() {
             isLastPuzzle={
               currentPuzzleIndex === selectedTeam.puzzles.length - 1
             }
+            isFirstPuzzle={currentPuzzleIndex === 0}
           />
         );
 

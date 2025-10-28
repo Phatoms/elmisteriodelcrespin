@@ -95,7 +95,7 @@ export const CodeInput = ({ onSubmit, onValidate, teamColor }: CodeInputProps) =
         transition={{ duration: 0.5 }}
         className="relative"
       >
-        <div className="flex justify-center gap-4 mb-6">
+        <div className="flex justify-center gap-3 mb-6">
           {digits.map((digit, index) => (
             <motion.input
               key={index}
@@ -107,7 +107,7 @@ export const CodeInput = ({ onSubmit, onValidate, teamColor }: CodeInputProps) =
               onChange={(e) => handleDigitChange(index, e.target.value)}
               onKeyDown={(e) => handleKeyDown(index, e)}
               onPaste={index === 0 ? handlePaste : undefined}
-              className={`code-digit ${showError ? 'border-crimson' : ''}`}
+              className={`code-digit-compact ${showError ? 'border-crimson' : ''}`}
               style={
                 digit && !showError
                   ? {
@@ -150,12 +150,12 @@ export const CodeInput = ({ onSubmit, onValidate, teamColor }: CodeInputProps) =
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: isComplete ? 1 : 0.5 }}
-        className="flex justify-center"
+        className="flex justify-center mt-2"
       >
         <button
           onClick={handleSubmit}
           disabled={!isComplete || isValidating}
-          className="mystery-btn text-lg px-8 py-3 no-select"
+          className="mystery-btn text-lg px-8 py-3 no-select w-full"
           style={
             isComplete && !isValidating
               ? {
@@ -166,7 +166,7 @@ export const CodeInput = ({ onSubmit, onValidate, teamColor }: CodeInputProps) =
           }
         >
           {isValidating ? (
-            <span className="flex items-center gap-2">
+            <span className="flex items-center justify-center gap-2">
               <motion.span
                 animate={{ rotate: 360 }}
                 transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
@@ -181,15 +181,6 @@ export const CodeInput = ({ onSubmit, onValidate, teamColor }: CodeInputProps) =
         </button>
       </motion.div>
 
-      {/* Helper Text */}
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.5 }}
-        className="text-center text-amber-dark text-sm mt-6 font-mystery"
-      >
-        Resuelve el enigma para obtener el código de 3 dígitos
-      </motion.p>
     </div>
   );
 };

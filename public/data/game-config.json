@@ -1,7 +1,8 @@
 {
   "intro": {
     "title": "El Misterio del Crespín",
-    "story": "Sonia, la querida profesora de cerámica del Crespín, ha desaparecido misteriosamente. Su taller está lleno de pistas, pero solo los más astutos podrán descubrir la verdad. Cada equipo deberá resolver 5 enigmas para encontrar una letra clave. Juntos, formarán la palabra que revelará el secreto final.\n\n¿Están listos para resolver este misterio?",
+    "story": "Sonia, la querida profesora de cerámica del Crespín, ha sido encontrada sin vida en su taller. La policía necesita su ayuda para resolver este misterio.\n\nCada equipo deberá resolver 5 enigmas para encontrar una letra clave. Juntos, formarán la palabra que revelará el secreto final.\n\n¿Están listos para resolver este misterio?",
+    "rules": "🕵️‍♀️ INSTRUCCIONES Y REGLAS DEL CASO\n\n1- Cada grupo fue asignado con un color identificador. Solo pueden usar las pistas marcadas con su color. Si tocan las de otro grupo… el espíritu de Sonia podría enojarse y descalificarlas.\n\n2- Cuando crean haber descifrado una pista y obtenido el código secreto, deberán ingresarlo en esta página. Si el código es correcto, la app las guiará al siguiente desafío. Si es incorrecto… bueno, digamos que el espíritu de Sonia sabrá que la cerámica no es lo único que se les quiebra.\n\n3- El espíritu de Sonia las estará acompañando durante toda la investigación. Si se sienten perdidas o bloqueadas, pueden pedirle una única pista extra por grupo. Para hacerlo, invoquen a Sonia (con el debido respeto y dramatismo, por favor).\n\n4- Tienen una hora exacta para resolver el misterio completo. Pasado ese tiempo, el caso quedará sin resolver y el espíritu de Sonia vagará como alma en pena, rompiendo las piezas que hagan y poniéndoles la traba cuando caminen en el taller.\n\nPrepárense. El horno está encendido. Las pistas están calientes.\nY el alma de Sonia… observa desde el más allá, lista para ver si sus alumnas están a la altura de su último gran desafío.",
     "image": "/images/intro/sonia-intro.jpg"
   },
   "finalWord": "POCHOCLO",
@@ -15,33 +16,33 @@
       "puzzles": [
         {
           "id": 1,
-          "code": "123",
-          "clueImage": "/images/clues/amarillo/puzzle1.jpg",
-          "clueText": "Busca en el estante de las herramientas antiguas, donde el tiempo se detiene..."
+          "code": "752",
+          "clueImage": "/images/clues/amarillo/placeholder.jpeg",
+          "clueText": "\"El aire se siente tenso… y no solo por el mate del recreo. Sonia dejó algo que tic-tac, tic-tac, parece que quiere explotar… y no, no es exageración. Dentro de esas pequeñas cajas hay piezas raras y misteriosas, y si las arman en el orden correcto, aparecerá un código secreto.\n\nPero ojo: cada segundo cuenta. Si dudan o empiezan a mirar los colores y formas bonitas, el tiempo las castigará con una explosión de confusión y risas. 😆\nAsí que, manos a la obra: armen, combinen y descifren antes de que el tic-tac se vuelva un concierto de pánico… y Sonia se aparezca a mirarlas con su sonrisa traviesa.\""
         },
         {
           "id": 2,
-          "code": "456",
-          "clueImage": "/images/clues/amarillo/puzzle2.jpg",
-          "clueText": "El horno viejo guarda secretos entre sus ladrillos. Cuenta las marcas en la puerta."
+          "code": "349",
+          "clueImage": "/images/clues/amarillo/placeholder.jpeg",
+          "clueText": "\"Pueden escuchar un susurro de telas, lentejuelas y pelucas… y no, no es el viento. 😏 Sonia decidió que alguien disfrazado debía custodiar la próxima pista, escondida entre risas y sombreros ridículos.\n\nLa clave está en encontrar el ritmo que se repite: 1, A, B, C, 2, D..\nAbran bien los ojos y los sentidos, porque Sonia dejó su humor por todas partes: cada mirada fija, cada pose tonta, es un guiño para su equipo. ¡Descubran la pista antes de que el maniquí comience a \"bailar\" con sus nervios!\""
         },
         {
           "id": 3,
-          "code": "789",
-          "clueImage": "/images/clues/amarillo/puzzle3.jpg",
-          "clueText": "Las obras incompletas tienen algo que decir. Mira detrás de la cortina azul."
+          "code": "103",
+          "clueImage": "/images/clues/amarillo/placeholder.jpeg",
+          "clueText": "\"Un aroma intenso flota en el aire, y no es sólo el café de la mañana. 🍷 Sonia, preocupada por los litros de brebajes alcohólicos que consumen sus alumnas, dejó la próxima pista en un lugar donde ya los vasos se vaciaron, aunque la fiesta continúe.\n\nEntre botellas, hay algo que solo los ojos atentos y las manos rápidas podrán descubrir: un código secreto escondido entre risas, sorbos y alguna que otra uva perdida.\nCuidado: si se distraen demasiado admirando las etiquetas, las piezas pueden resbalar… ¡y la pista desaparecerá como el último sorbo de vino!\""
         },
         {
           "id": 4,
-          "code": "234",
-          "clueImage": "/images/clues/amarillo/puzzle4.jpg",
-          "clueText": "El libro de visitas contiene más que nombres. Busca la página marcada."
+          "code": "865",
+          "clueImage": "/images/clues/amarillo/placeholder.jpeg",
+          "clueText": "\"Un murmullo de vinilo, un crujido antiguo… Sonia siempre decía que la música es más que sonido: es misterio. 🎶\nEntre discos y palancas olvidadas hay un mensaje secreto esperando a ser descifrado. Pero no cualquier oreja lo escuchará: hay que prestar atención a los detalles raros, las notas fuera de lugar y los discos que parecen reírse.\n\nSi se distraen bailando o tarareando, pueden perder la pista… y Sonia estará observando desde algún rincón, riéndose con cada paso torpe.\""
         },
         {
           "id": 5,
-          "code": "567",
-          "clueImage": "/images/clues/amarillo/puzzle5.jpg",
-          "clueText": "La última pieza del puzzle está en el lugar donde todo comienza: la mesa de trabajo principal."
+          "code": "610",
+          "clueImage": "/images/clues/amarillo/placeholder.jpeg",
+          "clueText": "\"Chicas, el tiempo retro los llama: la próxima pista está escondida en el reino donde Sonia era la reina de los VHS, con carátulas y lomos que esconden secretos. 🎬\n\nNo es cuestión de abrir todo a lo loco: busquen el detalle que brilla, que hace guiños a su equipo. Allí encontrarán el código que necesitan para seguir adelante.\nSonia, bromista como siempre, dejó algunas pistas que parecen falsas, otras que parecen olvidadas… pero todas con humor y un toque de travesura. Solo las que miren con atención entenderán el mensaje.\""
         }
       ]
     },
@@ -54,33 +55,33 @@
       "puzzles": [
         {
           "id": 1,
-          "code": "321",
-          "clueImage": "/images/clues/celeste/puzzle1.jpg",
-          "clueText": "Los pinceles más gastados revelan cuáles eran sus herramientas favoritas."
+          "code": "376",
+          "clueImage": "/images/clues/celeste/placeholder.jpeg",
+          "clueText": "\"Pueden escuchar un susurro de telas, lentejuelas y pelucas… y no, no es el viento. 😏 Sonia decidió que alguien disfrazado debía custodiar la próxima pista, escondida entre risas y sombreros ridículos.\n\nLa clave está en encontrar el ritmo que se repite: 1, A, B, C, 2, D..\nAbran bien los ojos y los sentidos, porque Sonia dejó su humor por todas partes: cada mirada fija, cada pose tonta, es un guiño para su equipo. ¡Descubran la pista antes de que el maniquí comience a \"bailar\" con sus nervios!\""
         },
         {
           "id": 2,
-          "code": "654",
-          "clueImage": "/images/clues/celeste/puzzle2.jpg",
-          "clueText": "Bajo la ventana del norte, donde entra la luz de la mañana."
+          "code": "785",
+          "clueImage": "/images/clues/celeste/placeholder.jpeg",
+          "clueText": "\"Un aroma intenso flota en el aire, y no es sólo el café de la mañana. 🍷 Sonia, preocupada por los litros de brebajes alcohólicos que consumen sus alumnas, dejó la próxima pista en un lugar donde ya los vasos se vaciaron, aunque la fiesta continúe.\n\nEntre botellas, hay algo que solo los ojos atentos y las manos rápidas podrán descubrir: un código secreto escondido entre risas, sorbos y alguna que otra uva perdida.\nCuidado: si se distraen demasiado admirando las etiquetas, las piezas pueden resbalar… ¡y la pista desaparecerá como el último sorbo de vino!\""
         },
         {
           "id": 3,
-          "code": "987",
-          "clueImage": "/images/clues/celeste/puzzle3.jpg",
-          "clueText": "El armario cerrado tiene una combinación. Las flores en el jarrón te darán la respuesta."
+          "code": "120",
+          "clueImage": "/images/clues/celeste/placeholder.jpeg",
+          "clueText": "\"Un murmullo de vinilo, un crujido antiguo… Sonia siempre decía que la música es más que sonido: es misterio. 🎶\nEntre discos y palancas olvidadas hay un mensaje secreto esperando a ser descifrado. Pero no cualquier oreja lo escuchará: hay que prestar atención a los detalles raros, las notas fuera de lugar y los discos que parecen reírse.\n\nSi se distraen bailando o tarareando, pueden perder la pista… y Sonia estará observando desde algún rincón, riéndose con cada paso torpe.\""
         },
         {
           "id": 4,
-          "code": "432",
-          "clueImage": "/images/clues/celeste/puzzle4.jpg",
-          "clueText": "Las fotografías en la pared no están ordenadas al azar. Sigue el patrón."
+          "code": "897",
+          "clueImage": "/images/clues/celeste/placeholder.jpeg",
+          "clueText": "\"Chicas, el tiempo retro los llama: la próxima pista está escondida en el reino donde Sonia era la reina de los VHS, con carátulas y lomos que esconden secretos. 🎬\n\nNo es cuestión de abrir todo a lo loco: busquen el detalle que brilla, que hace guiños a su equipo. Allí encontrarán el código que necesitan para seguir adelante.\nSonia, bromista como siempre, dejó algunas pistas que parecen falsas, otras que parecen olvidadas… pero todas con humor y un toque de travesura. Solo las que miren con atención entenderán el mensaje.\""
         },
         {
           "id": 5,
-          "code": "765",
-          "clueImage": "/images/clues/celeste/puzzle5.jpg",
-          "clueText": "Su taza favorita guarda el último secreto. Busca debajo del posavasos."
+          "code": "654",
+          "clueImage": "/images/clues/celeste/placeholder.jpeg",
+          "clueText": "\"El aire se siente tenso… y no solo por el mate del recreo. Sonia dejó algo que tic-tac, tic-tac, parece que quiere explotar… y no, no es exageración. Dentro de esas pequeñas cajas hay piezas raras y misteriosas, y si las arman en el orden correcto, aparecerá un código secreto.\n\nPero ojo: cada segundo cuenta. Si dudan o empiezan a mirar los colores y formas bonitas, el tiempo las castigará con una explosión de confusión y risas. 😆\nAsí que, manos a la obra: armen, combinen y descifren antes de que el tic-tac se vuelva un concierto de pánico… y Sonia se aparezca a mirarlas con su sonrisa traviesa.\""
         }
       ]
     },
@@ -93,33 +94,33 @@
       "puzzles": [
         {
           "id": 1,
-          "code": "147",
-          "clueImage": "/images/clues/rojo/puzzle1.jpg",
-          "clueText": "El calendario tiene fechas marcadas en rojo. Suma los días."
+          "code": "014",
+          "clueImage": "/images/clues/rojo/placeholder.jpeg",
+          "clueText": "\"Un aroma intenso flota en el aire, y no es sólo el café de la mañana. 🍷 Sonia, preocupada por los litros de brebajes alcohólicos que consumen sus alumnas, dejó la próxima pista en un lugar donde ya los vasos se vaciaron, aunque la fiesta continúe.\n\nEntre botellas, hay algo que solo los ojos atentos y las manos rápidas podrán descubrir: un código secreto escondido entre risas, sorbos y alguna que otra uva perdida.\nCuidado: si se distraen demasiado admirando las etiquetas, las piezas pueden resbalar… ¡y la pista desaparecerá como el último sorbo de vino!\""
         },
         {
           "id": 2,
-          "code": "258",
-          "clueImage": "/images/clues/rojo/puzzle2.jpg",
-          "clueText": "Los esmaltes están numerados. Los tres primeros de la segunda fila son especiales."
+          "code": "897",
+          "clueImage": "/images/clues/rojo/placeholder.jpeg",
+          "clueText": "\"Un murmullo de vinilo, un crujido antiguo… Sonia siempre decía que la música es más que sonido: es misterio. 🎶\nEntre discos y palancas olvidadas hay un mensaje secreto esperando a ser descifrado. Pero no cualquier oreja lo escuchará: hay que prestar atención a los detalles raros, las notas fuera de lugar y los discos que parecen reírse.\n\nSi se distraen bailando o tarareando, pueden perder la pista… y Sonia estará observando desde algún rincón, riéndose con cada paso torpe.\""
         },
         {
           "id": 3,
-          "code": "369",
-          "clueImage": "/images/clues/rojo/puzzle3.jpg",
-          "clueText": "La receta secreta está en el cuaderno verde. Página 27."
+          "code": "352",
+          "clueImage": "/images/clues/rojo/placeholder.jpeg",
+          "clueText": "\"Chicas, el tiempo retro los llama: la próxima pista está escondida en el reino donde Sonia era la reina de los VHS, con carátulas y lomos que esconden secretos. 🎬\n\nNo es cuestión de abrir todo a lo loco: busquen el detalle que brilla, que hace guiños a su equipo. Allí encontrarán el código que necesitan para seguir adelante.\nSonia, bromista como siempre, dejó algunas pistas que parecen falsas, otras que parecen olvidadas… pero todas con humor y un toque de travesura. Solo las que miren con atención entenderán el mensaje.\""
         },
         {
           "id": 4,
-          "code": "741",
-          "clueImage": "/images/clues/rojo/puzzle4.jpg",
-          "clueText": "Las baldosas del suelo cuentan una historia. Sigue el patrón desde la entrada."
+          "code": "739",
+          "clueImage": "/images/clues/rojo/placeholder.jpeg",
+          "clueText": "\"El aire se siente tenso… y no solo por el mate del recreo. Sonia dejó algo que tic-tac, tic-tac, parece que quiere explotar… y no, no es exageración. Dentro de esas pequeñas cajas hay piezas raras y misteriosas, y si las arman en el orden correcto, aparecerá un código secreto.\n\nPero ojo: cada segundo cuenta. Si dudan o empiezan a mirar los colores y formas bonitas, el tiempo las castigará con una explosión de confusión y risas. 😆\nAsí que, manos a la obra: armen, combinen y descifren antes de que el tic-tac se vuelva un concierto de pánico… y Sonia se aparezca a mirarlas con su sonrisa traviesa.\""
         },
         {
           "id": 5,
-          "code": "852",
-          "clueImage": "/images/clues/rojo/puzzle5.jpg",
-          "clueText": "El reloj se detuvo a una hora específica. Esa es tu clave final."
+          "code": "321",
+          "clueImage": "/images/clues/rojo/placeholder.jpeg",
+          "clueText": "\"Pueden escuchar un susurro de telas, lentejuelas y pelucas… y no, no es el viento. 😏 Sonia decidió que alguien disfrazado debía custodiar la próxima pista, escondida entre risas y sombreros ridículos.\n\nLa clave está en encontrar el ritmo que se repite: 1, A, B, C, 2, D..\nAbran bien los ojos y los sentidos, porque Sonia dejó su humor por todas partes: cada mirada fija, cada pose tonta, es un guiño para su equipo. ¡Descubran la pista antes de que el maniquí comience a \"bailar\" con sus nervios!\""
         }
       ]
     },
@@ -132,33 +133,33 @@
       "puzzles": [
         {
           "id": 1,
-          "code": "159",
-          "clueImage": "/images/clues/verde/puzzle1.jpg",
-          "clueText": "Las plantas del taller están colocadas estratégicamente. Cuenta las macetas verdes."
+          "code": "666",
+          "clueImage": "/images/clues/verde/placeholder.jpeg",
+          "clueText": "\"Un murmullo de vinilo, un crujido antiguo… Sonia siempre decía que la música es más que sonido: es misterio. 🎶\nEntre discos y palancas olvidadas hay un mensaje secreto esperando a ser descifrado. Pero no cualquier oreja lo escuchará: hay que prestar atención a los detalles raros, las notas fuera de lugar y los discos que parecen reírse.\n\nSi se distraen bailando o tarareando, pueden perder la pista… y Sonia estará observando desde algún rincón, riéndose con cada paso torpe.\""
         },
         {
           "id": 2,
-          "code": "357",
-          "clueImage": "/images/clues/verde/puzzle2.jpg",
-          "clueText": "El espejo tiene marcas de arcilla. Límpialo y verás los números."
+          "code": "843",
+          "clueImage": "/images/clues/verde/placeholder.jpeg",
+          "clueText": "\"Chicas, el tiempo retro los llama: la próxima pista está escondida en el reino donde Sonia era la reina de los VHS, con carátulas y lomos que esconden secretos. 🎬\n\nNo es cuestión de abrir todo a lo loco: busquen el detalle que brilla, que hace guiños a su equipo. Allí encontrarán el código que necesitan para seguir adelante.\nSonia, bromista como siempre, dejó algunas pistas que parecen falsas, otras que parecen olvidadas… pero todas con humor y un toque de travesura. Solo las que miren con atención entenderán el mensaje.\""
         },
         {
           "id": 3,
-          "code": "246",
-          "clueImage": "/images/clues/verde/puzzle3.jpg",
-          "clueText": "La caja de música toca una melodía. Cuenta las notas del estribillo."
+          "code": "112",
+          "clueImage": "/images/clues/verde/placeholder.jpeg",
+          "clueText": "\"El aire se siente tenso… y no solo por el mate del recreo. Sonia dejó algo que tic-tac, tic-tac, parece que quiere explotar… y no, no es exageración. Dentro de esas pequeñas cajas hay piezas raras y misteriosas, y si las arman en el orden correcto, aparecerá un código secreto.\n\nPero ojo: cada segundo cuenta. Si dudan o empiezan a mirar los colores y formas bonitas, el tiempo las castigará con una explosión de confusión y risas. 😆\nAsí que, manos a la obra: armen, combinen y descifren antes de que el tic-tac se vuelva un concierto de pánico… y Sonia se aparezca a mirarlas con su sonrisa traviesa.\""
         },
         {
           "id": 4,
-          "code": "951",
-          "clueImage": "/images/clues/verde/puzzle4.jpg",
-          "clueText": "Los certificados en la pared están numerados. El tercero tiene algo especial."
+          "code": "203",
+          "clueImage": "/images/clues/verde/placeholder.jpeg",
+          "clueText": "\"Pueden escuchar un susurro de telas, lentejuelas y pelucas… y no, no es el viento. 😏 Sonia decidió que alguien disfrazado debía custodiar la próxima pista, escondida entre risas y sombreros ridículos.\n\nLa clave está en encontrar el ritmo que se repite: 1, A, B, C, 2, D..\nAbran bien los ojos y los sentidos, porque Sonia dejó su humor por todas partes: cada mirada fija, cada pose tonta, es un guiño para su equipo. ¡Descubran la pista antes de que el maniquí comience a \"bailar\" con sus nervios!\""
         },
         {
           "id": 5,
-          "code": "753",
-          "clueImage": "/images/clues/verde/puzzle5.jpg",
-          "clueText": "La última pista está en su delantal favorito, el que cuelga junto a la puerta."
+          "code": "458",
+          "clueImage": "/images/clues/verde/placeholder.jpeg",
+          "clueText": "\"Un aroma intenso flota en el aire, y no es sólo el café de la mañana. 🍷 Sonia, preocupada por los litros de brebajes alcohólicos que consumen sus alumnas, dejó la próxima pista en un lugar donde ya los vasos se vaciaron, aunque la fiesta continúe.\n\nEntre botellas, hay algo que solo los ojos atentos y las manos rápidas podrán descubrir: un código secreto escondido entre risas, sorbos y alguna que otra uva perdida.\nCuidado: si se distraen demasiado admirando las etiquetas, las piezas pueden resbalar… ¡y la pista desaparecerá como el último sorbo de vino!\""
         }
       ]
     },
@@ -171,33 +172,33 @@
       "puzzles": [
         {
           "id": 1,
-          "code": "842",
-          "clueImage": "/images/clues/blanco/puzzle1.jpg",
-          "clueText": "Las esculturas terminadas tienen fechas grabadas. Busca las tres más recientes."
+          "code": "971",
+          "clueImage": "/images/clues/blanco/placeholder.jpeg",
+          "clueText": "\"Chicas, el tiempo retro los llama: la próxima pista está escondida en el reino donde Sonia era la reina de los VHS, con carátulas y lomos que esconden secretos. 🎬\n\nNo es cuestión de abrir todo a lo loco: busquen el detalle que brilla, que hace guiños a su equipo. Allí encontrarán el código que necesitan para seguir adelante.\nSonia, bromista como siempre, dejó algunas pistas que parecen falsas, otras que parecen olvidadas… pero todas con humor y un toque de travesura. Solo las que miren con atención entenderán el mensaje.\""
         },
         {
           "id": 2,
-          "code": "619",
-          "clueImage": "/images/clues/blanco/puzzle2.jpg",
-          "clueText": "El baúl antiguo tiene una cerradura de combinación. La respuesta está en el poema enmarcado."
+          "code": "320",
+          "clueImage": "/images/clues/blanco/placeholder.jpeg",
+          "clueText": "\"El aire se siente tenso… y no solo por el mate del recreo. Sonia dejó algo que tic-tac, tic-tac, parece que quiere explotar… y no, no es exageración. Dentro de esas pequeñas cajas hay piezas raras y misteriosas, y si las arman en el orden correcto, aparecerá un código secreto.\n\nPero ojo: cada segundo cuenta. Si dudan o empiezan a mirar los colores y formas bonitas, el tiempo las castigará con una explosión de confusión y risas. 😆\nAsí que, manos a la obra: armen, combinen y descifren antes de que el tic-tac se vuelva un concierto de pánico… y Sonia se aparezca a mirarlas con su sonrisa traviesa.\""
         },
         {
           "id": 3,
-          "code": "428",
-          "clueImage": "/images/clues/blanco/puzzle3.jpg",
-          "clueText": "Los moldes están organizados por tamaño. Cuenta los del estante superior."
+          "code": "086",
+          "clueImage": "/images/clues/blanco/placeholder.jpeg",
+          "clueText": "\"Pueden escuchar un susurro de telas, lentejuelas y pelucas… y no, no es el viento. 😏 Sonia decidió que alguien disfrazado debía custodiar la próxima pista, escondida entre risas y sombreros ridículos.\n\nLa clave está en encontrar el ritmo que se repite: 1, A, B, C, 2, D..\nAbran bien los ojos y los sentidos, porque Sonia dejó su humor por todas partes: cada mirada fija, cada pose tonta, es un guiño para su equipo. ¡Descubran la pista antes de que el maniquí comience a \"bailar\" con sus nervios!\""
         },
         {
           "id": 4,
-          "code": "537",
-          "clueImage": "/images/clues/blanco/puzzle4.jpg",
-          "clueText": "La radio vieja solo sintoniza una emisora. El número del dial es tu clave."
+          "code": "651",
+          "clueImage": "/images/clues/blanco/placeholder.jpeg",
+          "clueText": "\"Un aroma intenso flota en el aire, y no es sólo el café de la mañana. 🍷 Sonia, preocupada por los litros de brebajes alcohólicos que consumen sus alumnas, dejó la próxima pista en un lugar donde ya los vasos se vaciaron, aunque la fiesta continúe.\n\nEntre botellas, hay algo que solo los ojos atentos y las manos rápidas podrán descubrir: un código secreto escondido entre risas, sorbos y alguna que otra uva perdida.\nCuidado: si se distraen demasiado admirando las etiquetas, las piezas pueden resbalar… ¡y la pista desaparecerá como el último sorbo de vino!\""
         },
         {
           "id": 5,
-          "code": "916",
-          "clueImage": "/images/clues/blanco/puzzle5.jpg",
-          "clueText": "El último enigma está en la dedicatoria del libro que siempre llevaba consigo."
+          "code": "238",
+          "clueImage": "/images/clues/blanco/placeholder.jpeg",
+          "clueText": "\"Un murmullo de vinilo, un crujido antiguo… Sonia siempre decía que la música es más que sonido: es misterio. 🎶\nEntre discos y palancas olvidadas hay un mensaje secreto esperando a ser descifrado. Pero no cualquier oreja lo escuchará: hay que prestar atención a los detalles raros, las notas fuera de lugar y los discos que parecen reírse.\n\nSi se distraen bailando o tarareando, pueden perder la pista… y Sonia estará observando desde algún rincón, riéndose con cada paso torpe.\""
         }
       ]
     },
@@ -210,33 +211,33 @@
       "puzzles": [
         {
           "id": 1,
-          "code": "213",
-          "clueImage": "/images/clues/naranja/puzzle1.jpg",
-          "clueText": "Las llaves colgadas en el gancho están ordenadas. La tercera abre algo importante."
+          "code": "242",
+          "clueImage": "/images/clues/naranja/placeholder.jpeg",
+          "clueText": "\"El aire se siente tenso… y no solo por el mate del recreo. Sonia dejó algo que tic-tac, tic-tac, parece que quiere explotar… y no, no es exageración. Dentro de esas pequeñas cajas hay piezas raras y misteriosas, y si las arman en el orden correcto, aparecerá un código secreto.\n\nPero ojo: cada segundo cuenta. Si dudan o empiezan a mirar los colores y formas bonitas, el tiempo las castigará con una explosión de confusión y risas. 😆\nAsí que, manos a la obra: armen, combinen y descifren antes de que el tic-tac se vuelva un concierto de pánico… y Sonia se aparezca a mirarlas con su sonrisa traviesa.\""
         },
         {
           "id": 2,
-          "code": "546",
-          "clueImage": "/images/clues/naranja/puzzle2.jpg",
-          "clueText": "El periódico viejo tiene crucigrama sin terminar. Completa las palabras horizontales."
+          "code": "630",
+          "clueImage": "/images/clues/naranja/placeholder.jpeg",
+          "clueText": "\"Pueden escuchar un susurro de telas, lentejuelas y pelucas… y no, no es el viento. 😏 Sonia decidió que alguien disfrazado debía custodiar la próxima pista, escondida entre risas y sombreros ridículos.\n\nLa clave está en encontrar el ritmo que se repite: 1, A, B, C, 2, D..\nAbran bien los ojos y los sentidos, porque Sonia dejó su humor por todas partes: cada mirada fija, cada pose tonta, es un guiño para su equipo. ¡Descubran la pista antes de que el maniquí comience a \"bailar\" con sus nervios!\""
         },
         {
           "id": 3,
-          "code": "879",
-          "clueImage": "/images/clues/naranja/puzzle3.jpg",
-          "clueText": "Las cajas apiladas tienen símbolos. Lee de abajo hacia arriba."
+          "code": "734",
+          "clueImage": "/images/clues/naranja/placeholder.jpeg",
+          "clueText": "\"Un aroma intenso flota en el aire, y no es sólo el café de la mañana. 🍷 Sonia, preocupada por los litros de brebajes alcohólicos que consumen sus alumnas, dejó la próxima pista en un lugar donde ya los vasos se vaciaron, aunque la fiesta continúe.\n\nEntre botellas, hay algo que solo los ojos atentos y las manos rápidas podrán descubrir: un código secreto escondido entre risas, sorbos y alguna que otra uva perdida.\nCuidado: si se distraen demasiado admirando las etiquetas, las piezas pueden resbalar… ¡y la pista desaparecerá como el último sorbo de vino!\""
         },
         {
           "id": 4,
-          "code": "324",
-          "clueImage": "/images/clues/naranja/puzzle4.jpg",
-          "clueText": "El mapa en la pared tiene chinchetas. Conecta los puntos y verás el patrón."
+          "code": "441",
+          "clueImage": "/images/clues/naranja/placeholder.jpeg",
+          "clueText": "\"Un murmullo de vinilo, un crujido antiguo… Sonia siempre decía que la música es más que sonido: es misterio. 🎶\nEntre discos y palancas olvidadas hay un mensaje secreto esperando a ser descifrado. Pero no cualquier oreja lo escuchará: hay que prestar atención a los detalles raros, las notas fuera de lugar y los discos que parecen reírse.\n\nSi se distraen bailando o tarareando, pueden perder la pista… y Sonia estará observando desde algún rincón, riéndose con cada paso torpe.\""
         },
         {
           "id": 5,
-          "code": "657",
-          "clueImage": "/images/clues/naranja/puzzle5.jpg",
-          "clueText": "Su firma está en todas las obras. Cuenta los trazos de la letra más repetida."
+          "code": "521",
+          "clueImage": "/images/clues/naranja/placeholder.jpeg",
+          "clueText": "\"Chicas, el tiempo retro los llama: la próxima pista está escondida en el reino donde Sonia era la reina de los VHS, con carátulas y lomos que esconden secretos. 🎬\n\nNo es cuestión de abrir todo a lo loco: busquen el detalle que brilla, que hace guiños a su equipo. Allí encontrarán el código que necesitan para seguir adelante.\nSonia, bromista como siempre, dejó algunas pistas que parecen falsas, otras que parecen olvidadas… pero todas con humor y un toque de travesura. Solo las que miren con atención entenderán el mensaje.\""
         }
       ]
     },
@@ -249,33 +250,33 @@
       "puzzles": [
         {
           "id": 1,
-          "code": "481",
-          "clueImage": "/images/clues/rosa/puzzle1.jpg",
-          "clueText": "Los tarros de pigmento rosa tienen etiquetas con números. Suma los tres primeros."
+          "code": "310",
+          "clueImage": "/images/clues/rosa/placeholder.jpeg",
+          "clueText": "\"Pueden escuchar un susurro de telas, lentejuelas y pelucas… y no, no es el viento. 😏 Sonia decidió que alguien disfrazado debía custodiar la próxima pista, escondida entre risas y sombreros ridículos.\n\nLa clave está en encontrar el ritmo que se repite: 1, A, B, C, 2, D..\nAbran bien los ojos y los sentidos, porque Sonia dejó su humor por todas partes: cada mirada fija, cada pose tonta, es un guiño para su equipo. ¡Descubran la pista antes de que el maniquí comience a \"bailar\" con sus nervios!\""
         },
         {
           "id": 2,
-          "code": "592",
-          "clueImage": "/images/clues/rosa/puzzle2.jpg",
-          "clueText": "El tablón de anuncios tiene notas importantes. La que tiene corazón rosa es clave."
+          "code": "682",
+          "clueImage": "/images/clues/rosa/placeholder.jpeg",
+          "clueText": "\"Un aroma intenso flota en el aire, y no es sólo el café de la mañana. 🍷 Sonia, preocupada por los litros de brebajes alcohólicos que consumen sus alumnas, dejó la próxima pista en un lugar donde ya los vasos se vaciaron, aunque la fiesta continúe.\n\nEntre botellas, hay algo que solo los ojos atentos y las manos rápidas podrán descubrir: un código secreto escondido entre risas, sorbos y alguna que otra uva perdida.\nCuidado: si se distraen demasiado admirando las etiquetas, las piezas pueden resbalar… ¡y la pista desaparecerá como el último sorbo de vino!\""
         },
         {
           "id": 3,
-          "code": "603",
-          "clueImage": "/images/clues/rosa/puzzle3.jpg",
-          "clueText": "Las cintas en el cajón están anudadas. Cuenta los nudos del lazo rosa."
+          "code": "614",
+          "clueImage": "/images/clues/rosa/placeholder.jpeg",
+          "clueText": "\"Un murmullo de vinilo, un crujido antiguo… Sonia siempre decía que la música es más que sonido: es misterio. 🎶\nEntre discos y palancas olvidadas hay un mensaje secreto esperando a ser descifrado. Pero no cualquier oreja lo escuchará: hay que prestar atención a los detalles raros, las notas fuera de lugar y los discos que parecen reírse.\n\nSi se distraen bailando o tarareando, pueden perder la pista… y Sonia estará observando desde algún rincón, riéndose con cada paso torpe.\""
         },
         {
           "id": 4,
-          "code": "714",
-          "clueImage": "/images/clues/rosa/puzzle4.jpg",
-          "clueText": "El diario personal tiene páginas dobladas. Lee las esquinas marcadas."
+          "code": "206",
+          "clueImage": "/images/clues/rosa/placeholder.jpeg",
+          "clueText": "\"Chicas, el tiempo retro los llama: la próxima pista está escondida en el reino donde Sonia era la reina de los VHS, con carátulas y lomos que esconden secretos. 🎬\n\nNo es cuestión de abrir todo a lo loco: busquen el detalle que brilla, que hace guiños a su equipo. Allí encontrarán el código que necesitan para seguir adelante.\nSonia, bromista como siempre, dejó algunas pistas que parecen falsas, otras que parecen olvidadas… pero todas con humor y un toque de travesura. Solo las que miren con atención entenderán el mensaje.\""
         },
         {
           "id": 5,
-          "code": "825",
-          "clueImage": "/images/clues/rosa/puzzle5.jpg",
-          "clueText": "La última pista está donde guardaba sus sueños: en la caja de los bocetos."
+          "code": "738",
+          "clueImage": "/images/clues/rosa/placeholder.jpeg",
+          "clueText": "\"El aire se siente tenso… y no solo por el mate del recreo. Sonia dejó algo que tic-tac, tic-tac, parece que quiere explotar… y no, no es exageración. Dentro de esas pequeñas cajas hay piezas raras y misteriosas, y si las arman en el orden correcto, aparecerá un código secreto.\n\nPero ojo: cada segundo cuenta. Si dudan o empiezan a mirar los colores y formas bonitas, el tiempo las castigará con una explosión de confusión y risas. 😆\nAsí que, manos a la obra: armen, combinen y descifren antes de que el tic-tac se vuelva un concierto de pánico… y Sonia se aparezca a mirarlas con su sonrisa traviesa.\""
         }
       ]
     },
@@ -288,33 +289,33 @@
       "puzzles": [
         {
           "id": 1,
-          "code": "918",
-          "clueImage": "/images/clues/violeta/puzzle1.jpg",
-          "clueText": "Los frascos de vidrio violeta contienen algo más que materiales. Lee las etiquetas."
+          "code": "380",
+          "clueImage": "/images/clues/violeta/placeholder.jpeg",
+          "clueText": "\"Un aroma intenso flota en el aire, y no es sólo el café de la mañana. 🍷 Sonia, preocupada por los litros de brebajes alcohólicos que consumen sus alumnas, dejó la próxima pista en un lugar donde ya los vasos se vaciaron, aunque la fiesta continúe.\n\nEntre botellas, hay algo que solo los ojos atentos y las manos rápidas podrán descubrir: un código secreto escondido entre risas, sorbos y alguna que otra uva perdida.\nCuidado: si se distraen demasiado admirando las etiquetas, las piezas pueden resbalar… ¡y la pista desaparecerá como el último sorbo de vino!\""
         },
         {
           "id": 2,
-          "code": "827",
-          "clueImage": "/images/clues/violeta/puzzle2.jpg",
-          "clueText": "El cojín del banco de trabajo tiene un bordado. Cuenta las flores violetas."
+          "code": "245",
+          "clueImage": "/images/clues/violeta/placeholder.jpeg",
+          "clueText": "\"Un murmullo de vinilo, un crujido antiguo… Sonia siempre decía que la música es más que sonido: es misterio. 🎶\nEntre discos y palancas olvidadas hay un mensaje secreto esperando a ser descifrado. Pero no cualquier oreja lo escuchará: hay que prestar atención a los detalles raros, las notas fuera de lugar y los discos que parecen reírse.\n\nSi se distraen bailando o tarareando, pueden perder la pista… y Sonia estará observando desde algún rincón, riéndose con cada paso torpe.\""
         },
         {
           "id": 3,
-          "code": "736",
-          "clueImage": "/images/clues/violeta/puzzle3.jpg",
-          "clueText": "La lámpara proyecta sombras interesantes al atardecer. Observa el patrón en la pared."
+          "code": "000",
+          "clueImage": "/images/clues/violeta/placeholder.jpeg",
+          "clueText": "\"Chicas, el tiempo retro los llama: la próxima pista está escondida en el reino donde Sonia era la reina de los VHS, con carátulas y lomos que esconden secretos. 🎬\n\nNo es cuestión de abrir todo a lo loco: busquen el detalle que brilla, que hace guiños a su equipo. Allí encontrarán el código que necesitan para seguir adelante.\nSonia, bromista como siempre, dejó algunas pistas que parecen falsas, otras que parecen olvidadas… pero todas con humor y un toque de travesura. Solo las que miren con atención entenderán el mensaje.\""
         },
         {
           "id": 4,
-          "code": "645",
-          "clueImage": "/images/clues/violeta/puzzle4.jpg",
-          "clueText": "El collar de cuentas violetas que usaba tiene un mensaje. Cuenta las cuentas grandes."
+          "code": "139",
+          "clueImage": "/images/clues/violeta/placeholder.jpeg",
+          "clueText": "\"El aire se siente tenso… y no solo por el mate del recreo. Sonia dejó algo que tic-tac, tic-tac, parece que quiere explotar… y no, no es exageración. Dentro de esas pequeñas cajas hay piezas raras y misteriosas, y si las arman en el orden correcto, aparecerá un código secreto.\n\nPero ojo: cada segundo cuenta. Si dudan o empiezan a mirar los colores y formas bonitas, el tiempo las castigará con una explosión de confusión y risas. 😆\nAsí que, manos a la obra: armen, combinen y descifren antes de que el tic-tac se vuelva un concierto de pánico… y Sonia se aparezca a mirarlas con su sonrisa traviesa.\""
         },
         {
           "id": 5,
-          "code": "554",
-          "clueImage": "/images/clues/violeta/puzzle5.jpg",
-          "clueText": "El secreto final está en el primer regalo que recibió cuando abrió el taller."
+          "code": "874",
+          "clueImage": "/images/clues/violeta/placeholder.jpeg",
+          "clueText": "\"Pueden escuchar un susurro de telas, lentejuelas y pelucas… y no, no es el viento. 😏 Sonia decidió que alguien disfrazado debía custodiar la próxima pista, escondida entre risas y sombreros ridículos.\n\nLa clave está en encontrar el ritmo que se repite: 1, A, B, C, 2, D..\nAbran bien los ojos y los sentidos, porque Sonia dejó su humor por todas partes: cada mirada fija, cada pose tonta, es un guiño para su equipo. ¡Descubran la pista antes de que el maniquí comience a \"bailar\" con sus nervios!\""
         }
       ]
     }

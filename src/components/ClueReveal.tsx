@@ -6,6 +6,7 @@ interface ClueRevealProps {
   team: Team;
   onContinue: () => void;
   isLastPuzzle: boolean;
+  isFirstPuzzle?: boolean;
 }
 
 export const ClueReveal = ({
@@ -13,44 +14,61 @@ export const ClueReveal = ({
   team,
   onContinue,
   isLastPuzzle,
+  isFirstPuzzle = false,
 }: ClueRevealProps) => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-4 fingerprint-bg">
+    <div className="min-h-screen flex flex-col items-center justify-between p-3 fingerprint-bg">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6 }}
-        className="w-full max-w-2xl"
+        className="w-full max-w-xl pt-4"
       >
         {/* Success Header */}
-        <motion.div
-          initial={{ scale: 0, rotate: -180 }}
-          animate={{ scale: 1, rotate: 0 }}
-          transition={{ delay: 0.2, type: 'spring', stiffness: 200 }}
-          className="text-center mb-8"
-        >
-          <div className="text-6xl mb-4">✅</div>
-          <h2 className="font-elegant text-3xl text-amber-light mb-2">
-            ¡Código Correcto!
-          </h2>
-          <p className="text-sepia-light">
-            Has resuelto el Enigma {puzzle.id}
-          </p>
-        </motion.div>
+        {!isFirstPuzzle ? (
+          <motion.div
+            initial={{ scale: 0, rotate: -180 }}
+            animate={{ scale: 1, rotate: 0 }}
+            transition={{ delay: 0.2, type: 'spring', stiffness: 200 }}
+            className="text-center mb-4"
+          >
+            <div className="text-4xl mb-2">✅</div>
+            <h2 className="font-elegant text-2xl text-amber-light mb-1">
+              ¡Código Correcto!
+            </h2>
+            <p className="text-sepia-light text-sm">
+              Has resuelto el Enigma {puzzle.id - 1}
+            </p>
+          </motion.div>
+        ) : (
+          <motion.div
+            initial={{ scale: 0, rotate: -180 }}
+            animate={{ scale: 1, rotate: 0 }}
+            transition={{ delay: 0.2, type: 'spring', stiffness: 200 }}
+            className="text-center mb-4"
+          >
+            <h2 className="font-elegant text-2xl text-amber-light mb-1">
+              ¡Comencemos la investigación!
+            </h2>
+            <p className="text-sepia-light text-sm">
+              Equipo {team.name}
+            </p>
+          </motion.div>
+        )}
 
-        <div className="mystery-divider mb-8" />
+        <div className="mystery-divider mb-4" />
 
         {/* Clue Title */}
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-          className="text-center mb-8"
+          className="text-center mb-4"
         >
-          <h3 className="font-elegant text-2xl mb-2" style={{ color: team.color }}>
+          <h3 className="font-elegant text-xl mb-1" style={{ color: team.color }}>
             Pista Revelada
           </h3>
-          <p className="text-amber-dark text-sm font-mystery">
+          <p className="text-amber-dark text-xs font-mystery">
             Esta es tu siguiente indicación
           </p>
         </motion.div>
@@ -60,15 +78,15 @@ export const ClueReveal = ({
           initial={{ opacity: 0, y: 30, rotateZ: -5 }}
           animate={{ opacity: 1, y: 0, rotateZ: 2 }}
           transition={{ delay: 0.9, type: 'spring' }}
-          className="mb-8 flex justify-center"
+          className="mb-4 flex justify-center"
         >
-          <div className="polaroid-frame max-w-md">
+          <div className="polaroid-frame max-w-sm">
             <div className="aspect-[4/3] bg-mystery-medium rounded overflow-hidden relative">
               {/* Placeholder for image - will show actual image when provided */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center p-8">
-                  <div className="text-6xl mb-4">📷</div>
-                  <p className="text-amber-dark text-sm">
+                <div className="text-center p-4">
+                  <div className="text-4xl mb-2">📷</div>
+                  <p className="text-amber-dark text-xs">
                     Imagen de pista
                     <br />
                     <span className="text-xs opacity-70">
@@ -90,8 +108,8 @@ export const ClueReveal = ({
               />
             </div>
             {/* Polaroid caption */}
-            <div className="absolute bottom-4 left-4 right-4 text-center">
-              <p className="text-mystery-dark font-mystery text-sm">
+            <div className="absolute bottom-3 left-3 right-3 text-center">
+              <p className="text-mystery-dark font-mystery text-xs">
                 Enigma {puzzle.id}
               </p>
             </div>
@@ -103,23 +121,23 @@ export const ClueReveal = ({
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 1.2 }}
-          className="mb-8"
+          className="mb-4"
         >
           <div className="parchment-card">
-            <div className="flex items-start gap-3 mb-4">
-              <span className="text-3xl">🔍</span>
-              <h4 className="font-mystery text-xl font-bold text-mystery-darker">
+            <div className="flex items-start gap-2 mb-2">
+              <span className="text-2xl">🔍</span>
+              <h4 className="font-mystery text-lg font-bold text-mystery-darker">
                 Próxima Pista:
               </h4>
             </div>
-            <p className="text-mystery-darker leading-relaxed text-lg font-body">
+            <p className="text-mystery-darker leading-relaxed text-base font-body">
               {puzzle.clueText}
             </p>
 
             {/* Decorative seal */}
-            <div className="mt-6 flex justify-end">
+            <div className="mt-3 flex justify-end">
               <div
-                className="w-12 h-12 rounded-full border-4 flex items-center justify-center font-bold"
+                className="w-10 h-10 rounded-full border-3 flex items-center justify-center font-bold text-sm"
                 style={{
                   borderColor: team.color,
                   color: team.color,
@@ -131,31 +149,32 @@ export const ClueReveal = ({
           </div>
         </motion.div>
 
-        {/* Continue Button */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.5 }}
-          className="flex justify-center"
+      </motion.div>
+
+      {/* Continue Button - Fixed at Bottom */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.5 }}
+        className="w-full max-w-xl pb-6 px-4"
+      >
+        <button
+          onClick={onContinue}
+          className="mystery-btn text-lg px-8 py-3 font-elegant no-select w-full"
+          style={{
+            backgroundColor: team.color,
+            boxShadow: `0 4px 20px ${team.color}60`,
+          }}
         >
-          <button
-            onClick={onContinue}
-            className="mystery-btn text-xl px-10 py-4 font-elegant no-select"
-            style={{
-              backgroundColor: team.color,
-              boxShadow: `0 4px 20px ${team.color}60`,
-            }}
-          >
-            {isLastPuzzle ? '🎉 Ver Resultado Final' : '➜ Continuar Investigación'}
-          </button>
-        </motion.div>
+          {isLastPuzzle ? '🎉 Ver Resultado Final' : '➜ Continuar Investigación'}
+        </button>
 
         {/* Progress Hint */}
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.8 }}
-          className="text-center text-amber-dark text-sm mt-6"
+          className="text-center text-amber-dark text-xs mt-3"
         >
           {isLastPuzzle
             ? '¡Estás a punto de descubrir tu letra secreta!'

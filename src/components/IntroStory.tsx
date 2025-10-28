@@ -1,4 +1,5 @@
-import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import type { IntroData } from '../types/game.types';
 
 interface IntroStoryProps {
@@ -7,6 +8,7 @@ interface IntroStoryProps {
 }
 
 export const IntroStory = ({ intro, onStart }: IntroStoryProps) => {
+  const [showRules, setShowRules] = useState(false);
   return (
     <div className="min-h-screen flex items-center justify-center p-4 fingerprint-bg">
       <motion.div
@@ -47,7 +49,7 @@ export const IntroStory = ({ intro, onStart }: IntroStoryProps) => {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 1.2 + index * 0.2 }}
-                className="text-lg text-sepia-light leading-relaxed text-center md:text-left"
+                className="text-lg text-sepia-light leading-relaxed text-center md:text-left whitespace-pre-line"
               >
                 {paragraph}
               </motion.p>
@@ -65,11 +67,55 @@ export const IntroStory = ({ intro, onStart }: IntroStoryProps) => {
           </motion.div>
         </motion.div>
 
+        {/* Rules Section - Collapsible */}
+        {intro.rules && (
+          <>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.2, duration: 0.6 }}
+              className="flex justify-center mb-4"
+            >
+              <button
+                onClick={() => setShowRules(!showRules)}
+                className="mystery-btn-secondary text-base px-8 py-3 font-mystery no-select"
+              >
+                📋 {showRules ? 'Ocultar' : 'Ver'} Instrucciones
+              </button>
+            </motion.div>
+
+            <AnimatePresence>
+              {showRules && (
+                <motion.div
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  exit={{ opacity: 0, height: 0 }}
+                  transition={{ duration: 0.4 }}
+                  className="overflow-hidden mb-8"
+                >
+                  <div className="parchment-card">
+                    <div className="space-y-4">
+                      {intro.rules.split('\n\n').map((paragraph, index) => (
+                        <p
+                          key={index}
+                          className="text-base text-mystery-darker leading-relaxed whitespace-pre-line"
+                        >
+                          {paragraph}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </>
+        )}
+
         {/* Start Button */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 2.2, duration: 0.6 }}
+          transition={{ delay: 1.5, duration: 0.6 }}
           className="flex justify-center"
         >
           <button

@@ -42,6 +42,18 @@
     @apply opacity-50 cursor-not-allowed hover:bg-amber hover:shadow-mystery;
   }
 
+  /* Mystery Button Secondary */
+  .mystery-btn-secondary {
+    @apply px-6 py-3 bg-mystery-medium text-amber-light font-bold rounded-lg
+           border-2 border-amber-dark shadow-mystery transition-all duration-300
+           hover:bg-mystery-dark hover:border-amber hover:shadow-glow
+           active:scale-95 cursor-pointer;
+  }
+
+  .mystery-btn-secondary:disabled {
+    @apply opacity-50 cursor-not-allowed hover:bg-mystery-medium hover:border-amber-dark hover:shadow-mystery;
+  }
+
   /* Team Card */
   .team-card {
     @apply p-6 rounded-xl bg-mystery-medium border-2
@@ -73,6 +85,13 @@
   /* Code Input */
   .code-digit {
     @apply w-16 h-20 text-4xl text-center font-bold
+           bg-mystery-medium text-amber border-2 border-amber-dark
+           rounded-lg focus:outline-none focus:border-amber-light
+           focus:shadow-glow transition-all duration-200;
+  }
+
+  .code-digit-compact {
+    @apply w-14 h-16 text-3xl text-center font-bold
            bg-mystery-medium text-amber border-2 border-amber-dark
            rounded-lg focus:outline-none focus:border-amber-light
            focus:shadow-glow transition-all duration-200;

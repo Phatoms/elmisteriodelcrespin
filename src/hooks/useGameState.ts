@@ -30,12 +30,12 @@ export const useGameState = () => {
   }, [selectedTeam]);
 
   /**
-   * Select a team and navigate to puzzle screen
+   * Select a team and navigate to clue screen (show first clue)
    */
   const selectTeam = useCallback((team: Team) => {
     setSelectedTeam(team);
-    setCurrentScreen('puzzle');
-    setShowClue(false);
+    setCurrentScreen('clue');
+    setShowClue(true);
   }, []);
 
   /**
@@ -54,7 +54,7 @@ export const useGameState = () => {
   );
 
   /**
-   * Handle correct code submission - show clue or go to finish
+   * Handle correct code submission - move to next puzzle or finish
    */
   const onCorrectCode = useCallback(() => {
     if (!selectedTeam || !progress) return;
@@ -65,27 +65,40 @@ export const useGameState = () => {
 
     const nextIndex = currentPuzzleIndex + 1;
 
-    // If this is the last puzzle, go straight to congratulations
+    // Move to next puzzle index
+    setCurrentPuzzleIndex(nextIndex);
+
+    // If this is the last puzzle, go to congratulations
     if (nextIndex >= selectedTeam.puzzles.length) {
       setCurrentScreen('congratulations');
     } else {
-      // Otherwise, show the clue for the next puzzle location
+      // Otherwise, show the clue for the next puzzle
       setShowClue(true);
       setCurrentScreen('clue');
     }
   }, [selectedTeam, currentPuzzleIndex, progress]);
 
   /**
-   * Continue to next puzzle (from clue screen)
+   * Continue to puzzle screen (from clue screen)
    */
   const continueToNext = useCallback(() => {
     if (!selectedTeam) return;
 
-    // Move to next puzzle (this is only called when NOT the last puzzle)
-    setCurrentPuzzleIndex(currentPuzzleIndex + 1);
+    // Go to puzzle screen to enter the code
     setShowClue(false);
     setCurrentScreen('puzzle');
-  }, [selectedTeam, currentPuzzleIndex]);
+  }, [selectedTeam]);
+
+  /**
+   * Go back to clue screen (from puzzle screen)
+   */
+  const goBackToClue = useCallback(() => {
+    if (!selectedTeam) return;
+
+    // Go back to clue screen
+    setShowClue(true);
+    setCurrentScreen('clue');
+  }, [selectedTeam]);
 
   /**
    * Reset game to intro
@@ -141,6 +154,7 @@ export const useGameState = () => {
     validateCode,
     onCorrectCode,
     continueToNext,
+    goBackToClue,
     resetGame,
     goToTeamSelection,
     getCurrentPuzzle,

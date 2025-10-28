@@ -3,15 +3,31 @@ import type { GameProgress } from '../types/game.types';
 const STORAGE_KEY = 'elmisteriodelcrespin_progress';
 
 /**
+ * Get all saved progress
+ */
+const getAllProgress = (): Record<string, GameProgress> => {
+  try {
+    const stored = localStorage.getItem(STORAGE_KEY);
+    if (!stored) return {};
+    return JSON.parse(stored);
+  } catch (error) {
+    console.error('Error loading progress from localStorage:', error);
+    return {};
+  }
+};
+
+/**
  * Save game progress to localStorage
  */
 export const saveProgress = (progress: GameProgress): void => {
   try {
+    const allProgress = getAllProgress();
     const progressWithTimestamp = {
       ...progress,
       lastUpdated: new Date().toISOString(),
     };
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(progressWithTimestamp));
+    allProgress[progress.teamId] = progressWithTimestamp;
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(allProgress));
   } catch (error) {
     console.error('Error saving progress to localStorage:', error);
   }
@@ -22,17 +38,8 @@ export const saveProgress = (progress: GameProgress): void => {
  */
 export const loadProgress = (teamId: string): GameProgress | null => {
   try {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if (!stored) return null;
-
-    const progress: GameProgress = JSON.parse(stored);
-
-    // Only return progress if it matches the selected team
-    if (progress.teamId === teamId) {
-      return progress;
-    }
-
-    return null;
+    const allProgress = getAllProgress();
+    return allProgress[teamId] || null;
   } catch (error) {
     console.error('Error loading progress from localStorage:', error);
     return null;
@@ -45,13 +52,9 @@ export const loadProgress = (teamId: string): GameProgress | null => {
 export const clearProgress = (teamId?: string): void => {
   try {
     if (teamId) {
-      const stored = localStorage.getItem(STORAGE_KEY);
-      if (stored) {
-        const progress: GameProgress = JSON.parse(stored);
-        if (progress.teamId === teamId) {
-          localStorage.removeItem(STORAGE_KEY);
-        }
-      }
+      const allProgress = getAllProgress();
+      delete allProgress[teamId];
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(allProgress));
     } else {
       // Clear all progress
       localStorage.removeItem(STORAGE_KEY);
