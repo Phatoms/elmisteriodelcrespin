@@ -1,0 +1,322 @@
+{
+  "intro": {
+    "title": "El Misterio del Crespín",
+    "story": "Sonia, la querida profesora de cerámica del Crespín, ha desaparecido misteriosamente. Su taller está lleno de pistas, pero solo los más astutos podrán descubrir la verdad. Cada equipo deberá resolver 5 enigmas para encontrar una letra clave. Juntos, formarán la palabra que revelará el secreto final.\n\n¿Están listos para resolver este misterio?",
+    "image": "/images/intro/sonia-intro.jpg"
+  },
+  "finalWord": "POCHOCLO",
+  "teams": [
+    {
+      "id": "amarillo",
+      "name": "Amarillo",
+      "number": 1,
+      "color": "#FFD700",
+      "letter": "P",
+      "puzzles": [
+        {
+          "id": 1,
+          "code": "123",
+          "clueImage": "/images/clues/amarillo/puzzle1.jpg",
+          "clueText": "Busca en el estante de las herramientas antiguas, donde el tiempo se detiene..."
+        },
+        {
+          "id": 2,
+          "code": "456",
+          "clueImage": "/images/clues/amarillo/puzzle2.jpg",
+          "clueText": "El horno viejo guarda secretos entre sus ladrillos. Cuenta las marcas en la puerta."
+        },
+        {
+          "id": 3,
+          "code": "789",
+          "clueImage": "/images/clues/amarillo/puzzle3.jpg",
+          "clueText": "Las obras incompletas tienen algo que decir. Mira detrás de la cortina azul."
+        },
+        {
+          "id": 4,
+          "code": "234",
+          "clueImage": "/images/clues/amarillo/puzzle4.jpg",
+          "clueText": "El libro de visitas contiene más que nombres. Busca la página marcada."
+        },
+        {
+          "id": 5,
+          "code": "567",
+          "clueImage": "/images/clues/amarillo/puzzle5.jpg",
+          "clueText": "La última pieza del puzzle está en el lugar donde todo comienza: la mesa de trabajo principal."
+        }
+      ]
+    },
+    {
+      "id": "celeste",
+      "name": "Celeste",
+      "number": 2,
+      "color": "#87CEEB",
+      "letter": "O",
+      "puzzles": [
+        {
+          "id": 1,
+          "code": "321",
+          "clueImage": "/images/clues/celeste/puzzle1.jpg",
+          "clueText": "Los pinceles más gastados revelan cuáles eran sus herramientas favoritas."
+        },
+        {
+          "id": 2,
+          "code": "654",
+          "clueImage": "/images/clues/celeste/puzzle2.jpg",
+          "clueText": "Bajo la ventana del norte, donde entra la luz de la mañana."
+        },
+        {
+          "id": 3,
+          "code": "987",
+          "clueImage": "/images/clues/celeste/puzzle3.jpg",
+          "clueText": "El armario cerrado tiene una combinación. Las flores en el jarrón te darán la respuesta."
+        },
+        {
+          "id": 4,
+          "code": "432",
+          "clueImage": "/images/clues/celeste/puzzle4.jpg",
+          "clueText": "Las fotografías en la pared no están ordenadas al azar. Sigue el patrón."
+        },
+        {
+          "id": 5,
+          "code": "765",
+          "clueImage": "/images/clues/celeste/puzzle5.jpg",
+          "clueText": "Su taza favorita guarda el último secreto. Busca debajo del posavasos."
+        }
+      ]
+    },
+    {
+      "id": "rojo",
+      "name": "Rojo",
+      "number": 3,
+      "color": "#DC143C",
+      "letter": "C",
+      "puzzles": [
+        {
+          "id": 1,
+          "code": "147",
+          "clueImage": "/images/clues/rojo/puzzle1.jpg",
+          "clueText": "El calendario tiene fechas marcadas en rojo. Suma los días."
+        },
+        {
+          "id": 2,
+          "code": "258",
+          "clueImage": "/images/clues/rojo/puzzle2.jpg",
+          "clueText": "Los esmaltes están numerados. Los tres primeros de la segunda fila son especiales."
+        },
+        {
+          "id": 3,
+          "code": "369",
+          "clueImage": "/images/clues/rojo/puzzle3.jpg",
+          "clueText": "La receta secreta está en el cuaderno verde. Página 27."
+        },
+        {
+          "id": 4,
+          "code": "741",
+          "clueImage": "/images/clues/rojo/puzzle4.jpg",
+          "clueText": "Las baldosas del suelo cuentan una historia. Sigue el patrón desde la entrada."
+        },
+        {
+          "id": 5,
+          "code": "852",
+          "clueImage": "/images/clues/rojo/puzzle5.jpg",
+          "clueText": "El reloj se detuvo a una hora específica. Esa es tu clave final."
+        }
+      ]
+    },
+    {
+      "id": "verde",
+      "name": "Verde",
+      "number": 4,
+      "color": "#228B22",
+      "letter": "H",
+      "puzzles": [
+        {
+          "id": 1,
+          "code": "159",
+          "clueImage": "/images/clues/verde/puzzle1.jpg",
+          "clueText": "Las plantas del taller están colocadas estratégicamente. Cuenta las macetas verdes."
+        },
+        {
+          "id": 2,
+          "code": "357",
+          "clueImage": "/images/clues/verde/puzzle2.jpg",
+          "clueText": "El espejo tiene marcas de arcilla. Límpialo y verás los números."
+        },
+        {
+          "id": 3,
+          "code": "246",
+          "clueImage": "/images/clues/verde/puzzle3.jpg",
+          "clueText": "La caja de música toca una melodía. Cuenta las notas del estribillo."
+        },
+        {
+          "id": 4,
+          "code": "951",
+          "clueImage": "/images/clues/verde/puzzle4.jpg",
+          "clueText": "Los certificados en la pared están numerados. El tercero tiene algo especial."
+        },
+        {
+          "id": 5,
+          "code": "753",
+          "clueImage": "/images/clues/verde/puzzle5.jpg",
+          "clueText": "La última pista está en su delantal favorito, el que cuelga junto a la puerta."
+        }
+      ]
+    },
+    {
+      "id": "blanco",
+      "name": "Blanco",
+      "number": 5,
+      "color": "#F5F5F5",
+      "letter": "O",
+      "puzzles": [
+        {
+          "id": 1,
+          "code": "842",
+          "clueImage": "/images/clues/blanco/puzzle1.jpg",
+          "clueText": "Las esculturas terminadas tienen fechas grabadas. Busca las tres más recientes."
+        },
+        {
+          "id": 2,
+          "code": "619",
+          "clueImage": "/images/clues/blanco/puzzle2.jpg",
+          "clueText": "El baúl antiguo tiene una cerradura de combinación. La respuesta está en el poema enmarcado."
+        },
+        {
+          "id": 3,
+          "code": "428",
+          "clueImage": "/images/clues/blanco/puzzle3.jpg",
+          "clueText": "Los moldes están organizados por tamaño. Cuenta los del estante superior."
+        },
+        {
+          "id": 4,
+          "code": "537",
+          "clueImage": "/images/clues/blanco/puzzle4.jpg",
+          "clueText": "La radio vieja solo sintoniza una emisora. El número del dial es tu clave."
+        },
+        {
+          "id": 5,
+          "code": "916",
+          "clueImage": "/images/clues/blanco/puzzle5.jpg",
+          "clueText": "El último enigma está en la dedicatoria del libro que siempre llevaba consigo."
+        }
+      ]
+    },
+    {
+      "id": "naranja",
+      "name": "Naranja",
+      "number": 6,
+      "color": "#FF8C00",
+      "letter": "C",
+      "puzzles": [
+        {
+          "id": 1,
+          "code": "213",
+          "clueImage": "/images/clues/naranja/puzzle1.jpg",
+          "clueText": "Las llaves colgadas en el gancho están ordenadas. La tercera abre algo importante."
+        },
+        {
+          "id": 2,
+          "code": "546",
+          "clueImage": "/images/clues/naranja/puzzle2.jpg",
+          "clueText": "El periódico viejo tiene crucigrama sin terminar. Completa las palabras horizontales."
+        },
+        {
+          "id": 3,
+          "code": "879",
+          "clueImage": "/images/clues/naranja/puzzle3.jpg",
+          "clueText": "Las cajas apiladas tienen símbolos. Lee de abajo hacia arriba."
+        },
+        {
+          "id": 4,
+          "code": "324",
+          "clueImage": "/images/clues/naranja/puzzle4.jpg",
+          "clueText": "El mapa en la pared tiene chinchetas. Conecta los puntos y verás el patrón."
+        },
+        {
+          "id": 5,
+          "code": "657",
+          "clueImage": "/images/clues/naranja/puzzle5.jpg",
+          "clueText": "Su firma está en todas las obras. Cuenta los trazos de la letra más repetida."
+        }
+      ]
+    },
+    {
+      "id": "rosa",
+      "name": "Rosa",
+      "number": 7,
+      "color": "#FF69B4",
+      "letter": "L",
+      "puzzles": [
+        {
+          "id": 1,
+          "code": "481",
+          "clueImage": "/images/clues/rosa/puzzle1.jpg",
+          "clueText": "Los tarros de pigmento rosa tienen etiquetas con números. Suma los tres primeros."
+        },
+        {
+          "id": 2,
+          "code": "592",
+          "clueImage": "/images/clues/rosa/puzzle2.jpg",
+          "clueText": "El tablón de anuncios tiene notas importantes. La que tiene corazón rosa es clave."
+        },
+        {
+          "id": 3,
+          "code": "603",
+          "clueImage": "/images/clues/rosa/puzzle3.jpg",
+          "clueText": "Las cintas en el cajón están anudadas. Cuenta los nudos del lazo rosa."
+        },
+        {
+          "id": 4,
+          "code": "714",
+          "clueImage": "/images/clues/rosa/puzzle4.jpg",
+          "clueText": "El diario personal tiene páginas dobladas. Lee las esquinas marcadas."
+        },
+        {
+          "id": 5,
+          "code": "825",
+          "clueImage": "/images/clues/rosa/puzzle5.jpg",
+          "clueText": "La última pista está donde guardaba sus sueños: en la caja de los bocetos."
+        }
+      ]
+    },
+    {
+      "id": "violeta",
+      "name": "Violeta",
+      "number": 8,
+      "color": "#8B00FF",
+      "letter": "O",
+      "puzzles": [
+        {
+          "id": 1,
+          "code": "918",
+          "clueImage": "/images/clues/violeta/puzzle1.jpg",
+          "clueText": "Los frascos de vidrio violeta contienen algo más que materiales. Lee las etiquetas."
+        },
+        {
+          "id": 2,
+          "code": "827",
+          "clueImage": "/images/clues/violeta/puzzle2.jpg",
+          "clueText": "El cojín del banco de trabajo tiene un bordado. Cuenta las flores violetas."
+        },
+        {
+          "id": 3,
+          "code": "736",
+          "clueImage": "/images/clues/violeta/puzzle3.jpg",
+          "clueText": "La lámpara proyecta sombras interesantes al atardecer. Observa el patrón en la pared."
+        },
+        {
+          "id": 4,
+          "code": "645",
+          "clueImage": "/images/clues/violeta/puzzle4.jpg",
+          "clueText": "El collar de cuentas violetas que usaba tiene un mensaje. Cuenta las cuentas grandes."
+        },
+        {
+          "id": 5,
+          "code": "554",
+          "clueImage": "/images/clues/violeta/puzzle5.jpg",
+          "clueText": "El secreto final está en el primer regalo que recibió cuando abrió el taller."
+        }
+      ]
+    }
+  ]
+}
