@@ -73,31 +73,6 @@ export const ClueReveal = ({
           </p>
         </motion.div>
 
-        {/* Polaroid Image */}
-        <motion.div
-          initial={{ opacity: 0, y: 30, rotateZ: -5 }}
-          animate={{ opacity: 1, y: 0, rotateZ: 2 }}
-          transition={{ delay: 0.9, type: 'spring' }}
-          className="mb-4 flex justify-center"
-        >
-          <div className="polaroid-frame max-w-sm">
-            <div className="aspect-[4/3] bg-mystery-medium rounded overflow-hidden relative">
-              {/* Load actual image */}
-              <img
-                src={puzzle.clueImage}
-                alt={`Pista ${puzzle.id}`}
-                className="w-full h-full object-cover"
-              />
-            </div>
-            {/* Polaroid caption */}
-            <div className="absolute bottom-3 left-3 right-3 text-center">
-              <p className="text-mystery-dark font-mystery text-xs">
-                Enigma {puzzle.id}
-              </p>
-            </div>
-          </div>
-        </motion.div>
-
         {/* Parchment Clue Text */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
@@ -148,7 +123,7 @@ export const ClueReveal = ({
             boxShadow: `0 4px 20px ${team.color}60`,
           }}
         >
-          {isLastPuzzle ? '🎉 Ver Resultado Final' : '➜ Continuar Investigación'}
+          {isLastPuzzle ? '➜ Ingresar Código Final' : '➜ Continuar Investigación'}
         </button>
 
         {/* Progress Hint */}
@@ -159,7 +134,7 @@ export const ClueReveal = ({
           className="text-center text-amber-dark text-xs mt-3"
         >
           {isLastPuzzle
-            ? '¡Estás a punto de descubrir tu letra secreta!'
+            ? 'Este es el último enigma. Resuelve el código para descubrir tu letra secreta.'
             : 'Sigue la pista para encontrar el próximo enigma'}
         </motion.p>
       </motion.div>

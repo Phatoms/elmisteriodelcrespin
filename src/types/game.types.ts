@@ -5,7 +5,7 @@
 export interface Puzzle {
   id: number;
   code: string;
-  clueImage: string;
+  clueImage?: string;
   clueText: string;
 }
 
