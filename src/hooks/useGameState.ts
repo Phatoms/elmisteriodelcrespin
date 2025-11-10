@@ -18,10 +18,12 @@ export const useGameState = () => {
   useEffect(() => {
     if (selectedTeam) {
       const savedProgress = loadProgress(selectedTeam.id);
-      if (savedProgress) {
+      if (savedProgress && savedProgress.currentPuzzleIndex < selectedTeam.puzzles.length) {
+        // Valid saved progress - resume from where they left off
         setProgress(savedProgress);
         setCurrentPuzzleIndex(savedProgress.currentPuzzleIndex);
       } else {
+        // No progress or game was completed - start fresh
         const newProgress = createInitialProgress(selectedTeam.id);
         setProgress(newProgress);
         saveProgress(newProgress);
